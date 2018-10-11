@@ -1,0 +1,388 @@
+.wrapper {
+	margin: 50px 0 0 500px;
+}
+.doraemon {
+	position: relative;
+}
+.doraemon .head{
+	position: relative;
+	width: 330px;
+	height: 305px;
+	border-radius: 300px;
+	background-color: #07bbee;
+	background: #7db9e8; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #7db9e8 0%, #218cd3 58%, #1e5799 86%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #7db9e8 0%,#218cd3 58%,#1e5799 86%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #7db9e8 0%,#218cd3 58%,#1e5799 86%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=1 );
+	border: 2px solid #555;
+	box-shadow: -5px 10px 15px rgba(0,0,0,0.3)
+}
+.doraemon .face{
+	position: relative;
+	z-index: 2;  /*脸在头部背景的上面*/
+}
+.doraemon .face .white{
+	width: 240px;
+	height: 210px;
+	border-radius: 200px;
+	position: absolute;
+	top: -220px;
+	left: 45px;
+	background-color: #fff;
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(243,243,243,1) 38%, rgba(237,237,237,1) 61%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 38%,rgba(237,237,237,1) 61%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 38%,rgba(237,237,237,1) 61%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */tr='#e2e2e2', endColorstr='#fefefe',GradientType=1 ); 
+}
+.doraemon .eyes{
+	position: relative;
+	z-index: 3;
+}
+.doraemon .eyes .left{
+	width: 75px;
+	height: 85px;
+	background-color: #fff;
+	border: 2px solid #000;
+	border-radius: 40px;
+	position: absolute;
+	top: 60px;
+	left: 82px;
+}
+.doraemon .eyes .right{
+	width: 75px;
+	height: 85px;
+	background-color: #fff;
+	border: 2px solid #000;
+	border-radius: 40px;
+	position: absolute;
+	top: 60px;
+	left: 160px;
+}
+.doraemon .eyes .eye .bleft{
+	width: 15px;
+	height: 15px;
+	background-color: #000;
+	border-radius: 7px;
+	position: absolute;
+	top: 40px;
+	left: 55px;
+	animation: eyemove 3s linear infinite;
+}
+.doraemon .eyes .eye .bright{
+	width: 15px;
+	height: 15px;
+	background-color: #000;
+	border-radius: 7px;
+	position: absolute;
+	top: 40px;
+	right: 55px;
+	animation: eyemove 3s linear infinite;
+}
+.doraemon .face .nose{
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	background-color: #c93300;
+	border: 2px solid #000;
+	position: absolute;
+	top: 45px;
+	left: 100px;
+	z-index: 3;
+}
+.doraemon .face .nose .light{
+	width: 12px;
+	height: 12px;
+	border-radius: 15px;
+	box-shadow: 15px 8px 5px #fff;
+}
+.doraemon .face .nose_line{
+	width: 3px;
+	height: 99px;
+	background-color: #333;
+	position: absolute;
+	z-index: 3;
+	top: 79px;
+	left: 115px;
+}
+.doraemon .face .mouth{
+	width: 110px;
+	height: 100px;
+	border-bottom: 3px solid #333;
+	border-radius: 200px;
+	position: absolute;
+	bottom: 30px;
+	left: 63px;
+	z-index: 3;
+}
+.doraemon .whiskers{
+	width: 200px;
+	height: 80px;
+	background-color: #transparent;
+	position: absolute;
+	z-index: 2;
+	top:75px;
+	left: 15px;
+}
+.doraemon .whiskers .whisker{
+	width: 60px;
+	height: 2px;
+	background-color: #333;
+	position: absolute;
+	z-index: 2;
+}
+.doraemon .whiskers .rTop{
+	left: 7px;
+	top: 14px;
+}
+.doraemon .whiskers .rMiddle{
+	left: 5px;
+	top: 33px;
+}
+.doraemon .whiskers .rBottom{
+	left: 6px;
+	top: 54px;
+}
+.doraemon .whiskers .lTop{
+	left: 132px;
+	top: 14px;
+}
+.doraemon .whiskers .lMiddle{
+	left: 134px;
+	top: 33px;
+}
+.doraemon .whiskers .lBottom{
+	left: 132px;
+	top: 54px;
+}
+.doraemon .whiskers .r160{
+	transform: rotate(-160deg);
+}
+.doraemon .whiskers .r20{
+	transform: rotate(-20deg);
+}
+.doraemon .choker{
+	width: 233px;
+	height: 25px;
+	background-color: #c40;
+	border-radius: 30px;
+	border: 2px solid #000;
+	z-index: 4;
+	background: rgb(248,80,50);
+	background: -moz-linear-gradient(-45deg, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 28%, rgba(241,111,92,1) 40%, rgba(246,41,12,1) 62%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(248,80,50,1) 0%,rgba(241,111,92,1) 28%,rgba(241,111,92,1) 40%,rgba(246,41,12,1) 62%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%);
+	background: linear-gradient(135deg, rgba(248,80,50,1) 0%,rgba(241,111,92,1) 28%,rgba(241,111,92,1) 40%,rgba(246,41,12,1) 62%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=1 );
+	left: 44px;
+	top: -29px;
+	position: relative;
+}
+.doraemon .choker .bell{
+	width: 40px;
+	height: 40px;
+	border: 2px solid #000;
+	position: absolute;
+	border-radius: 40px;
+	background: rgb(252,234,187); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 28%, rgba(248,181,0,1) 51%, rgba(251,223,147,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 28%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 28%,rgba(248,181,0,1) 51%,rgba(251,223,147,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	top: 8px;
+	left: 94px;
+}
+.doraemon .choker .bell_line{
+	width: 36px;
+	height: 2px;
+	background: #f9f12a;
+	border: 2px solid #000;
+	border-radius: 3px 3px 0 0 ;
+	position: absolute;
+	top: 8px;
+}
+.doraemon .choker .bell_circle{
+	width: 15px;
+	height: 10px;
+	background-color: #000;
+	border-radius: 10px;
+	position: absolute;
+	top: 20px;
+	left: 13px;
+}
+.doraemon .choker .bell_under{
+	width: 3px;
+	height: 15px;
+	background-color: #000;
+	position: absolute;
+	left: 19px;
+	top: 27px;
+}
+.doraemon .choker .bell_right{
+	width: 12px;
+	height: 12px;
+	border-radius: 10px;
+	box-shadow: 19px 8px 5px #fff;
+	position: absolute;
+	opacity: 0.6;
+	top: 7px;
+	left: 8px;
+}
+.doraemon .bodys{
+	position: relative;
+	top: -256px;
+}
+.doraemon .bodys .body{
+	width: 231px;
+	height: 200px;
+	border:2px solid #333;
+	position: absolute;
+	top:205px;
+	left: 45px;
+	border-radius: 5px;
+	background:rgb(37,141,200);
+}
+.doraemon .bodys .wraps{
+	width: 170px;
+	height: 170px;
+	background: #fff;
+	border: 2px solid #000;
+	border-radius: 170px;
+	left: 75px;
+	top: 184px;
+	position: absolute;
+}
+.doraemon .bodys .pocket{
+	width: 119px;
+	height: 69px;
+	border-radius: 0 0 130px 130px;
+	background-color: #fff;
+	border: 2px solid #000;
+	position: absolute;
+	top: 269px;
+	left: 99px;
+}
+.doraemon .hand_right,.doraemon .hand_left{
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	top: 10px;
+	left:10px;
+}
+.doraemon .hand_left{
+	left: -10px;
+}
+.doraemon .arm{
+	width: 80px;
+	height: 50px;
+	border: 1px solid #000;
+	border-left: none;
+	box-shadow: -10px 7px 10px rgba(0,0,0,0.3)
+	z-index:-1;
+	position: relative;
+	background:rgb(37,141,200);
+}
+.doraemon .hand_left .arm{
+	top: 301px;
+	transform: rotate(35deg);
+	left: 268px;
+}
+.doraemon .hand_right .arm{
+	top: 300px;
+	transform: rotate(145deg);
+	left: -24px;
+}
+.doraemon .circle{
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	border:2px solid #000;
+	background-color: #fff;
+	position: absolute;
+}
+.doraemon .hand_right .circle{
+	left: 296px;
+	top: 321px;
+	z-index: 1;
+}
+.doraemon .hand_left .circle{
+	left: -33px;
+	top: 322px;
+}
+.doraemon .arm_rewrite{
+	height: 52px;
+	width: 29px;
+	position: relative;
+	background:rgb(37,141,200);
+}
+.doraemon .hand_right .arm_rewrite{
+	top: 246px;
+	left: 239px;
+	z-index: 1;
+
+}
+.doraemon .hand_left .arm_rewrite{
+	top: 247px;
+	left: 56px;
+
+}
+.doraemon .foot{
+	width: 280px;
+	height: 40px;
+	position: relative;
+	top: 55px;
+	left: 20px;
+}
+.doraemon .foot .left,.doraemon .foot .right{
+	width: 125px;
+	height: 30px;
+	background: #fff;
+	border: 2px solid #333;
+	border-radius: 80px 60px 60px 40px;
+	box-shadow: -6px 0 10px rgba(0,0,0,0.35);
+	position: relative;
+}
+.doraemon .foot .left{
+	top: 88px;
+	left: 2px;
+}
+.doraemon .foot .right{
+	top: 53px;
+	left: 157px;
+}
+.doraemon .foot .foot_rewrite{
+	width: 30px;
+	height: 15px;
+	background-color: #fff;
+	border: 2px solid #000;
+	border-bottom: none;
+	border-radius: 40px 40px 0 0;
+	position: relative;
+	top: 14px;
+	left: 128px;
+}
+@keyframes eyemove{
+70% {
+                margin: 0 0 0 0;
+            }
+
+            80% {
+                margin: -22px 0 0 0;
+            }
+
+            85% {
+                margin: -22px 0 0 5px;
+            }
+
+            90% {
+                margin: -22px 10px 0 0;
+            }
+
+            93% {
+                margin: -22px 0 0 0;
+            }
+
+            96% {
+                margin: 0 0 0 0;
+            }
+}
